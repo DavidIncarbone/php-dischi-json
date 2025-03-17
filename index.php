@@ -22,8 +22,8 @@ require_once "./server.php";
 
     <?php require_once "./header.php" ?>
 
-    <div class="container ">
-        <div class="row g-5 ">
+    <div class="container w-75 my-3">
+        <div class="row g-3">
 
             <?php
             foreach ($discs as $disc) {
@@ -31,13 +31,21 @@ require_once "./server.php";
                 // var_dump($disc["cover_url"]);
 
             ?>
-                <div class="col-4 d-flex flex-column align-items-center py-3 ">
-                    <div class="img-container ">
-                        <img src=<?php echo $disc["cover_url"] ?> alt=<?php echo $disc["title"] ?>>
+                <div class="col-4 d-flex justify-content-center g-5">
+
+                    <div class="card py-3 w-100 d-flex flex-column align-items-center text-white">
+
+                        <div class=" img-container ">
+                            <img src=<?php echo $disc["cover_url"] ?> alt=<?php echo $disc["title"] ?>>
+                        </div>
+                        <div class="card-info pt-3 text-center">
+                            <div><strong><?php echo $disc["title"] ?></strong></div>
+                            <div><?php echo $disc["artist"] ?></div>
+                            <div><?php echo $disc["genre"] ?></div>
+                            <div><strong><?php echo $disc["year_of_publication"] ?></strong></div>
+                        </div>
                     </div>
-                    <h5><?php echo $disc["title"] ?></h5>
-                    <div><?php echo $disc["artist"] ?></div>
-                    <h5><?php echo $disc["year_of_publication"] ?></h5>
+
                 </div>
 
 

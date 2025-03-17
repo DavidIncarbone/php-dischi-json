@@ -1,3 +1,13 @@
+:root {
+    --color-background: #1d2d3c;
+    --color-background-card: #10202f;
+}
+
+body {
+    background-color: var(--color-background);
+}
+
+
 .debug {
     border: 1px, solid, red;
 }
@@ -6,6 +16,10 @@ img {
     width: 100%;
     height: 100%;
 
+}
+
+.card {
+    background-color: var(--color-background-card);
 }
 
 .img-container {

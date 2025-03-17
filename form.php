@@ -1,11 +1,3 @@
-<?php
-
-require_once "./server.php"
-
-
-
-?>
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -19,10 +11,12 @@ require_once "./server.php"
 
 <body>
 
+    <?php require_once "./header.php" ?>
+
     <h1 class="text-center text-white">Aggiungi un nuovo album</h1>
 
 
-    <form action="server.php" method="POST" class="text-white p-5">
+    <form action="./server.php" method="POST" class="text-white p-5">
         <div class="card text-white">
             <div class="card-body">
                 <div class="mb-3">
@@ -30,15 +24,15 @@ require_once "./server.php"
                 </div>
 
                 <div class="mb-3">
-                    <label for="album-name" class="form-label">Nome album:</label>
+                    <label for="title" class="form-label">Nome album:</label>
                     <div class="form-text text-white">Min 1 Max 50 caratteri</div>
-                    <input type="text" id="album-name" name="album-name" placeholder="Inserisci il nome dell'album" class="form-control" required minlength="1" maxlength="50">
+                    <input type="text" id="title" name="title" placeholder="Inserisci il nome dell'album" class="form-control" required minlength="1" maxlength="50">
                 </div>
 
                 <div class="mb-3">
-                    <label for="artist-name" class="form-label">Nome artista:</label>
+                    <label for="artist" class="form-label">Nome artista:</label>
                     <div class="form-text text-white">Min 1 Max 50 caratteri</div>
-                    <input type="text" id="artist-name" name="artist-name" placeholder="Inserisci il nome dell'artista" class="form-control" required minlength="1" maxlength="50">
+                    <input type="text" id="artist" name="artist" placeholder="Inserisci il nome dell'artista" class="form-control" required minlength="1" maxlength="50">
                 </div>
 
                 <div class="mb-3">
@@ -48,15 +42,15 @@ require_once "./server.php"
                 </div>
 
                 <div class="mb-3">
-                    <label for="year-of-pubblication" class="form-label">Anno di pubblicazione:</label>
+                    <label for="year_of_publication" class="form-label">Anno di pubblicazione:</label>
                     <div class="form-text text-white">Min 1 Max 50 caratteri</div>
-                    <input type="text" id="year-of-pubblication" name="year-of-pubblication" placeholder="Inserisci l'anno di pubblicazione dell'album" class="form-control" required minlength="1" maxlength="50">
+                    <input type="number" id="year_of_publication" name="year_of_publication" placeholder="Inserisci l'anno di pubblicazione dell'album" class="form-control" required min="1900" max="2025" step="1">
                 </div>
 
                 <div class="mb-3">
-                    <label for="album-cover" class="form-label">Cover album:</label>
+                    <label for="cover_url" class="form-label">Cover album:</label>
                     <div class="form-text text-white">Min 1 Max 1000 caratteri</div>
-                    <input type="text" id="album-cover" name="album-cover" placeholder="Inserisci la cover dell'album" class="form-control" required minlength="1" maxlength="1000">
+                    <input type="text" id="cover_url" name="cover_url" placeholder="Inserisci la cover dell'album" class="form-control" required minlength="1" maxlength="1000">
                 </div>
             </div>
         </div>

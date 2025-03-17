@@ -1,7 +1,7 @@
 <?php
 
 session_start();
-require_once "./server.php";
+require_once "./vars.php";
 
 ?>
 
@@ -21,6 +21,14 @@ require_once "./server.php";
 <body class="">
 
     <?php require_once "./header.php" ?>
+
+    <div class="d-flex justify-content-center mt-3">
+
+        <button class="p-2 card">
+            <a href="./form.php" class="text-decoration-none text-white">Aggiungi nuovo album</a>
+        </button>
+
+    </div>
 
     <div class="container w-75 my-3">
         <div class="row g-3">

@@ -1,6 +1,8 @@
 :root {
     --color-background: #1d2d3c;
     --color-background-card: #10202f;
+    --color-bg-header: #1a1414;
+    ;
 }
 
 body {
@@ -11,6 +13,7 @@ body {
 .debug {
     border: 1px, solid, red;
 }
+
 
 img {
     width: 100%;

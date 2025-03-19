@@ -13,7 +13,7 @@
 
     <?php require_once "./header.php" ?>
 
-    <h1 class="text-center text-white">Aggiungi un nuovo album</h1>
+    <h1 class="text-center text-white mt-3">Aggiungi un nuovo album</h1>
 
 
     <form action="./server.php" method="POST" class="text-white p-5">
@@ -27,6 +27,10 @@
                     <label for="title" class="form-label">Nome album:</label>
                     <div class="form-text text-white">Min 1 Max 50 caratteri</div>
                     <input type="text" id="title" name="title" placeholder="Inserisci il nome dell'album" class="form-control" required minlength="1" maxlength="50">
+                    <?php
+
+                    ?>
+
                 </div>
 
                 <div class="mb-3">
